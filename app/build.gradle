@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: "de.mannodermaus.android-junit5"
 
 android {
     compileSdkVersion 29
@@ -15,6 +14,16 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +37,21 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
-    testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // (Required) Writing and executing Unit Tests on the JUnit Platform
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.5.2"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.5.2"
+
+    // (Optional) If you need "Parameterized Tests"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.5.2"
+
+    // (Optional) If you also have JUnit 4-based tests
+    testImplementation "junit:junit:4.12"
+    testImplementation "org.junit.vintage:junit-vintage-engine:5.5.2"
+
+
+    testImplementation 'org.junit.platform:junit-platform-suite-api:1.5.0'
+    testImplementation 'org.junit.platform:junit-platform-runner:1.5.0'
 }
