@@ -26,7 +26,7 @@ JUnit4 Rules, JUnit5 Sample
     + [**Custom Annotation**](#--custom-annotation--)
     + [테스트 클래스와 테스트 메소드 (Test Classes and Methods)](#------------------test-classes-and-methods-)
     + [**DisplayName 설정하기**](#--displayname-------)
-      - [** 테스트 클래스와 테스트 메소드 (Test Classes and Methods)**](#---------------------test-classes-and-methods---)
+      - [**테스트 클래스와 테스트 메소드 (Test Classes and Methods)**](#---------------------test-classes-and-methods---)
       - [**DisplayName 설정하기**](#--displayname--------1)
     + [**Assertions**](#--assertions--)
     + [**테스트 비활성화 (Disabling Test)**](#------------disabling-test---)
@@ -955,7 +955,7 @@ IndicativeSentens 클래스를 사용합니다 .
 </br>
 
 
-#### ** 테스트 클래스와 테스트 메소드 (Test Classes and Methods)**
+#### **테스트 클래스와 테스트 메소드 (Test Classes and Methods)**
 
 **TestClass** :최소한 하나의 test-method를 포함하는최상위 클래스로,static멤버 클래스 또는[@Nested클래스](https://junit.org/junit5/docs/current/user-guide/#writing-tests-nested).
 
