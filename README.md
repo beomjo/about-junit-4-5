@@ -1,5 +1,5 @@
-# JUnit4-5_Sample
-JUnit4 Rules, JUnit5 Sample  
+# JUnit4,5 Study Record
+JUnit4 Rules, JUnit5 Samples  
 
 # Table of Contents  
 - [JUnit4](#junit4)
