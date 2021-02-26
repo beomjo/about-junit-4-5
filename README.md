@@ -1,8 +1,8 @@
-# JUnit4,5 Study Record
+# About JUnit4,5
 JUnit4 Rules, JUnit5 Samples  
 
 # Table of Contents  
-- [JUnit4](#junit4)
+- [About JUnit4,5](#about-junit-4,5)
   * [JUnit Rules](#junit-rules)
     + [**JUnit의 Rule이란??**](#--junit--rule------)
     + [**JUnit Rule 종류**](#--junit-rule-----)
